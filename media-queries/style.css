@@ -1,0 +1,56 @@
+.title{
+    font-size:52px;
+}
+
+.paragraph-1{
+    font-size: 24px;
+}
+
+@media (max-width:640px){
+    .title{
+        font-size: 36px;
+    }
+    .paragraph-1{
+        font-size: 26px;
+    }
+    
+}
+
+@media (max-width:480px){
+    .title{
+        font-size: 32px;
+    }
+    .paragraph-1 {
+        font-size: 24px;
+    }
+}
+/* pseudo classes */
+button{
+    transition: 300ms;
+}
+button:hover{
+    opacity:30%;
+    background-color: red;
+    padding: 4px;
+}
+
+/* pseudo elments */
+p::before{
+    content: "Hey my name is ";
+}
+
+/* animation css */
+h2{
+      
+    animation: pointdown 1000ms infinite alternate-reverse;  
+} 
+@keyframes pointdown{
+    0%{
+     transform: translateY(0);
+    }
+
+    100%{
+      transform: translateY(16px);
+    }
+}
+
